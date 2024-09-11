@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danjogram</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="show(); includeHTML()">
+    <div class="siteFormat">
+      <header>
+        <div class="danjogram">
+          <a href="./index.html" class="danjogram"><img src="./img/logo_dsc.svg" alt="Logo" class="logo" />
+          <h1>Danjogram</h1></a>
+        </div>
+        <div>
+          <a href="./index.html"><img src="./img/haus.png" alt="Home" class="headerIcons"></a>
+          <img src="./img/briefumschlag.png" alt="Message" class="headerIcons">
+          <img src="./img/kompass.png" alt="Kompass" class="headerIcons">
+          <img src="./img/herz.png" alt="Heart" class="headerIcons">
+          <img src="./img/daniel.png" alt="Profile" class="headerIcons">
+          <img src="./img/bar.png" alt="Bar" class="burgerMenu" onclick="showMenu()">
+        </div>
+
+        <button>CREATE POST</button>
+        
+      </header>
+      <div id="hiddenMenu" class="burgerContainer">
+        <a href="./index.html"><img src="./img/haus.png" alt="Home" class="burgerIcons" onclick="showMenu()"></a>
+        <img src="./img/briefumschlag.png" alt="Message" class="burgerIcons" onclick="showMenu()">
+        <img src="./img/kompass.png" alt="Kompass" class="burgerIcons" onclick="showMenu()">
+        <img src="./img/herz.png" alt="Heart" class="burgerIcons" onclick="showMenu()">
+        <img src="./img/daniel.png" alt="Profile" class="burgerIcons" onclick="showMenu()">
+      </div>
+    
+</body>
+</html>

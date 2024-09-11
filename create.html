@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="icon" type="image/x-icon" href="./img/herz.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="create.js" defer></script>
+</head>
+
+<body onload="fetchUser();">
+    <h1>Neuen Post erstellen</h1>
+
+    <form id="postForm" enctype="multipart/form-data">
+
+        <label for="user">User auswählen:</label>
+        <select id="user" name="user">
+        </select>
+
+
+        <label for="location">Ort:</label>
+        <input type="text" id="location" name="location" placeholder="Ort eingeben" required>
+
+
+        <label for="description">Beschreibung:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Beschreibung eingeben" required></textarea>
+
+
+        <label for="image">Bild hochladen:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+
+
+        <button type="button" onclick="submitPost()">Post erstellen</button>
+    </form>
+</body>
+
+</html>
